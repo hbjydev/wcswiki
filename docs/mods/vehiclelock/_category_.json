@@ -1,0 +1,8 @@
+{
+    "label": "WCS Vehicle Lock",
+    "position": 2,
+    "link": {
+        "type": "doc",
+        "id": "mods/vehiclelock/index"
+    }
+}

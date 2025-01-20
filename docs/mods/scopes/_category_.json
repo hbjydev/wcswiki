@@ -1,0 +1,8 @@
+{
+    "label": "WCS Scopes",
+    "position": 2,
+    "link": {
+        "type": "doc",
+        "id": "mods/scopes/index"
+    }
+}

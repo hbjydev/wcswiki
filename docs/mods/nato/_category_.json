@@ -1,0 +1,8 @@
+{
+    "label": "WCS NATO",
+    "position": 2,
+    "link": {
+        "type": "doc",
+        "id": "mods/nato/index"
+    }
+}

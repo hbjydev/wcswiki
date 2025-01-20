@@ -1,0 +1,8 @@
+{
+    "label": "Mods",
+    "position": 2,
+    "link": {
+        "type": "doc",
+        "id": "mods/index"
+    }
+}
