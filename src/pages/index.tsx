@@ -29,7 +29,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={"Welcome"}
-      description="Description will go into a meta tag in <head />">
+      description="The wiki for Worst Case Scenario's Reforger mods & other content.">
       <HomepageHeader />
     </Layout>
   );
