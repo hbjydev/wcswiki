@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'WCS Wiki',
   tagline: 'Worst Case Scenario',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/wcs_small.png',
 
   // Set the production url of your site here
   url: 'https://wcswiki.pages.dev',
@@ -47,7 +47,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/wcs-social-card.jpg',
     navbar: {
       title: 'WCS Wiki',
       logo: {
