@@ -1,0 +1,59 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Setting up a custom faction
+
+If you're trying to use WCS_LoadoutEditor with a custom faction, there's a small
+amount of setup you need to do in order to make sure your players can access
+their saved loadout slots, regardless of what kind of mission you're trying to
+run.
+
+## Overriding the LoadoutManager prefabs
+
+1. Find the `LoadoutManager_Editor` prefab in the resource browser. This
+    will be located in `ArmaReforger/Prefabs/MP/Managers/Loadouts`.
+
+    ![An image showing the location of the `LoadoutManager_Editor` prefab.](/img/mods/loadouteditor/custom-faction-p1.png)
+
+2. Right-click on the prefab and choose "Override in '...'".
+3. Right-click on the new, overridden prefab, and click "Edit Prefab(s)".
+
+    ![An image showing the location of the "Edit Prefab(s)" button.](/img/mods/loadouteditor/custom-faction-p2.png)
+
+## Adding loadout slots for your faction
+
+Once you're in the LoadoutManager prefab, we need to add our new loadout slots.
+
+1. Click into the `SCR_LoadoutManager` component on the right side of the
+   screen.
+
+2. Scroll down to "Loadout Manager", then "Player Loadouts".
+
+3. Add a new item to the "Player Loadouts" list. Use the
+   `SCR_PlayerArsenalLoadout` class.
+
+    1. Set the Loadout Name to "Slot 1".
+    2. Set the Loadout Resource to your faction's base loadout prefab.
+    3. Ignore the Loadout Image.
+    4. Set Affiliated Faction to your faction key. (This has to match _exactly_)
+    5. Set the WCS Slot Id value to `Slot1` exactly.
+
+4. Duplicate the loadout slot we just created, and change the loadout name to
+   "Slot 2". Then set the WCS Slot Id to `Slot2` exactly.
+
+5. Duplicate the loadout slot we created, and change the loadout name to
+   "Slot 3". Then set the WCS Slot Id to `Slot3` exactly.
+
+6. Once you've added all three required slots, save the prefab.
+
+All GM scenarios should now include WCS Loadout Editor slots for your custom
+faction.
+
+:::note
+
+The slots will only appear once a loadout has been saved to them, so don't panic
+if you only see the default loadout in the respawn menu. Spawn a weapons &amp;
+equipment arsenal and make a quick test loadout, then save it and respawn. You
+should now see that the slot you saved it to is now available.
+
+:::
