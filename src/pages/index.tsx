@@ -3,11 +3,9 @@ import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
-import ThemedImage from '@theme/ThemedImage';
 import LogoLight from '../../static/img/logo-light.svg';
 
 import styles from './index.module.css';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
